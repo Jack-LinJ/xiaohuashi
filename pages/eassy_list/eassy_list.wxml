@@ -1,0 +1,8 @@
+<!--pages/eassy_list/eassy_list.wxml-->
+<navigation-bar title="文章列表" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+
+<view class="homework-card" wx:for="{{homeworkList}}" bindtap="goEassyList" data-title="{{item.title}}">
+    <view class="classNo">{{item.class}}</view>
+    <view class="homework-title">{{item.title}}</view>
+    <view class="time">{{item.time}}</view>
+</view>

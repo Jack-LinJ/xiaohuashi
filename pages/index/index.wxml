@@ -1,0 +1,32 @@
+<!--index.wxml-->
+<navigation-bar title="小花狮智能辅导系统" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<view class="container">
+
+  <view class="login-container" >
+    <image class="logo" src="../../icon/elion.png"></image>
+    <view class="input-container">
+      <image class="input-img" src="../../icon/user.png"></image>
+      <input class="input-type1" bindinput="getUsername" type="text" placeholder="教师：1；学生：2"/>
+    </view>
+    <view class="input-container" style="border-bottom: 1px solid rgb(206, 206, 206);">
+      <image class="input-img" src="../../icon/password.png"></image>
+      <input class="input-type1" type="password" placeholder="请输入密码"/>
+    </view>
+
+    <button class="login-btn" type="primary" bindtap="goApp">登 录</button>
+  <view class="changeType-container">
+    <view class="change-btn" bindtap="changeType" data-type="1">立即注册</view>
+    <view class="change-btn" bindtap="changeType" data-type="2">忘记密码</view>
+    <view class="change-btn" bindtap="changeType" data-type="3">遇到问题</view>
+  </view>
+  </view>
+  
+  <view class="sign-container" wx:if="{{pageType==1}}">
+    
+  </view>
+
+  <view class="forget-container" wx:if="{{pageType==2}}">
+    
+  </view>
+
+</view>

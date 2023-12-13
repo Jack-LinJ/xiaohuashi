@@ -1,0 +1,8 @@
+<!--pages/class_manager/class_manager.wxml-->
+<navigation-bar title="班级管理" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+
+<view class="class-card" wx:for="{{classList}}" bindtap="goClass" data-title="{{item.title}}">
+    <view class="classNo">{{item.class}}</view>
+    <view class="homework-title">{{item.total}}</view>
+    <view class="time">{{item.time}}</view>
+</view>

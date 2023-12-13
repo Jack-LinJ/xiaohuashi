@@ -1,0 +1,3 @@
+<!--pages/eassy/eassy.wxml-->
+<navigation-bar title="文章批改" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+

@@ -1,0 +1,17 @@
+<!--pages/eassy_manager/eassy_manager.wxml-->
+<navigation-bar title="批改中心" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+
+<view class="homework-card" wx:for="{{homeworkList}}" bindtap="goEassyList" data-title="{{item.title}}">
+    <view class="card-left">
+        <view class="classNo">{{item.class}}</view>
+        <view class="homework-title">{{item.title}}</view>
+        <view class="time">{{item.time}}</view>
+    </view>
+    <view class="card-right">
+        <view class="leftnum">待提交<view class="num">{{item.submitLeft}}</view>
+        </view>
+        <view class="leftnum">待批改<view class="num">{{item.correctLeft}}</view>
+        </view>
+    </view>
+
+</view>

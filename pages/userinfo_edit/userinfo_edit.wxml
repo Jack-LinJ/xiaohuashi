@@ -1,0 +1,3 @@
+<!--pages/userinfo_edit/userinfo_edit.wxml-->
+<navigation-bar title="修改个人信息" back="{{true}}" color="black" background="#FFF"></navigation-bar>
+

@@ -1,0 +1,51 @@
+/**index.wxss**/
+.container{
+
+}
+.login-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo{
+  width: 140rpx;
+  height: 140rpx;
+  margin-bottom: 20px;
+}
+
+.input-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100vw;
+  border-top: 1px solid rgb(206, 206, 206);
+}
+
+.input-img{
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 20rpx;
+  margin-left: 40rpx;
+}
+
+.input-type1{
+  height: 100rpx;
+  width: 80vw;
+}
+
+.login-btn{
+  width: 100rpx;
+  margin-top: 50rpx;
+}
+
+.changeType-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.change-btn{
+  color: rgb(65, 140, 226);
+  margin:80rpx 40rpx;
+  font-weight: bold;
+}

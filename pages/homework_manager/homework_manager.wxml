@@ -1,0 +1,3 @@
+<!--pages/homework_manager/homework_manager.wxml-->
+<navigation-bar title="作业管理" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+

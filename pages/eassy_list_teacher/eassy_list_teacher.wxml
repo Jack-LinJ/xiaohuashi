@@ -1,0 +1,34 @@
+<!--pages/eassy_list_teacher/eassy_list_teacher.wxml-->
+<navigation-bar title="{{title}}" back="{{true}}" color="black" background="#FFF"></navigation-bar>
+
+<view class="eassyInfo">
+	<view class="eassyTitle">{{title}}</view>
+	<view class="classNum">2020级一班</view>
+	<view class="leftnum-container">
+		<view class="leftnum">总人数<view class="num" style="color: black;">3人</view>
+		</view>
+		<view class="leftnum">待提交<view class="num" style="color: red;">1人</view>
+		</view>
+		<view class="leftnum">待批复<view class="num" style="color: orange;">1人</view>
+		</view>
+		<view class="leftnum">已批复<view class="num" style="color: green;">1人</view>
+		</view>
+	</view>
+</view>
+<view class="studentInfo" wx:for="{{students}}" bindtap="goEassy" data-index="{{index}}">
+	<view class="divider"></view>
+	<view class="top">
+		<view class="student-left">
+		<view class="studentEassyName">{{item.eassyName}}</view>
+		<view class="studentName">{{item.name}}</view>
+		<view class="lastSubmit">{{item.lastSubmit}}</view>
+	</view>
+	<view class="student-right">
+		<view wx:if="{{item.status=='0'}}" class="status0">未提交</view>
+		<view wx:if="{{item.status=='1'}}" class="status1">待批复</view>
+		<view wx:if="{{item.status=='2'}}" class="status2">已批复</view>
+		<view wx:if="{{item.status=='2'}}" class="score">{{item.score}}</view>
+	</view>
+	</view>
+	<view class="bottom">{{item.comment}}</view>
+</view>

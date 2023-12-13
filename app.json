@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/user_center/user_center",
+    "pages/homework_manager/homework_manager",
+    "pages/class_manager/class_manager",
+    "pages/eassy_manager/eassy_manager",
+    "pages/eassy_list/eassy_list",
+    "pages/eassy/eassy",
+    "pages/student_list/student_list",
+    "pages/sign_up/sign_up",
+    "pages/forget_password/forget_password",
+    "pages/userinfo_edit/userinfo_edit",
+    "pages/eassy_list_teacher/eassy_list_teacher"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "custom": true, 
+    "color": "#E0AAAA",
+    "selectedColor": "#E0AAAA",
+    "list": [ 
+      {
+        "pagePath":"pages/user_center/user_center"
+      },
+      {
+        "pagePath":"pages/class_manager/class_manager"
+      },
+      {
+        "pagePath":"pages/eassy_list/eassy_list"
+      },
+      {
+        "pagePath":"pages/eassy_manager/eassy_manager"
+      },
+      {
+        "pagePath":"pages/homework_manager/homework_manager"
+      }
+    ]
+  },
+
+  "style": "v2",
+  "rendererOptions": {
+    "skyline": {
+      "defaultDisplayBlock": true,
+      "disableABTest": true,
+      "sdkVersionBegin": "3.0.0",
+      "sdkVersionEnd": "15.255.255"
+    }
+  },
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

@@ -1,0 +1,16 @@
+<!--pages/user_center/user_center.wxml-->
+<navigation-bar title="用户中心" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<view class="information-container">
+    <image class="photo" src="../../icon/elion.png"></image>
+    <view class="information">
+        <view class="content">李华</view>
+        <view class="content">华东师范小学</view>
+        <view class="content">小学三年级2班</view>
+    </view>
+    
+</view>
+<view class="button-container">
+        <button class="btn" type="primary" bindtap="goEdit">修改个人信息</button>
+        <button class="btn" type="primary" bindtap="goForgetPassword">修改密码</button>
+        <button class="btn" type="primary" bindtap="exitLogin">退出登录</button>
+    </view>
