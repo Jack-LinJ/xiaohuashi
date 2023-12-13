@@ -1,1 +1,49 @@
 /* pages/eassy/eassy.wxss */
+.title{
+  font-size: 46rpx;
+  text-align: center;
+}
+.paragraph{
+  margin-top: 20rpx;
+  padding: 0 20rpx;
+  font-size: 32rpx;
+}
+.paragraph-start{
+  font-size: 30rpx;
+  border: 1px solid orange;
+  border-radius: 10px;
+  padding: 0rpx 10rpx 0 10rpx;
+  color: orange;
+  margin-right: 10rpx;
+}
+.paragraph-end{
+  font-size: 30rpx;
+  border: 1px solid orange;
+  border-radius: 10px;
+  padding: 0rpx 10rpx 0 10rpx;
+  color: orange;
+  margin-right: 10rpx;
+}
+.paragraph-evaluation{
+
+  padding: 0rpx 10rpx;
+  margin-top: 10rpx;
+  border-radius: 10rpx;
+}
+.tags-container{
+  display: flex;
+  flex-direction: row;
+}
+.tags{
+  font-size: 28rpx;
+  border: 1px solid orange;
+  margin-right: 20rpx;
+  border-radius: 10rpx;
+  padding: 2rpx 10rpx;
+}
+.divider{
+	height: 1px;
+	width: 710rpx;
+	background-color: rgb(235, 232, 232);
+	margin: 10rpx 0 ;
+}

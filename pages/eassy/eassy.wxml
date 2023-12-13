@@ -1,3 +1,24 @@
 <!--pages/eassy/eassy.wxml-->
-<navigation-bar title="文章批改" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<navigation-bar title="文章批改" back="{{true}}" color="black" background="#FFF"></navigation-bar>
+<view class="title">绍兴柯岩风景区</view>
+<view class="paragraph" wx:for="{{paragraph}}">
+  <!-- <text class="paragraph-start">第{{item.index}}段</text> -->
+  <text class="sentence" wx:for="{{item.sentence}}" wx:for-index="sentenceIndex" bind:tap="showSentenceEvaluation" data-sentenceindex="{{sentenceIndex}}" data-paragraphindex="{{index}}">{{item.content}}</text>
+  <text class="paragraph-end" bind:tap="showParagraphEvaluation" data-index="{{index}}">段落点评△</text>
+  <view class="divider"></view>
+  <view class="paragraph-evaluation">
+    <block wx:if="{{item.show==1}}">
+      <view class="tags-container">
+        <view class="tags" wx:for="{{item.evaluation.tags}}">{{item}}</view>
+      </view>
+      <view class="evaluation">{{item.evaluation.content}}</view>
+    </block>
+    <block wx:if="{{item.show==2}}">
+      <view class="sentenceEvaluation">{{item.sentence[item.sentenceShow].error}}</view>
+      <view class="sentenceEvaluation">{{item.sentence[item.sentenceShow].highpoint}}</view>
 
+    </block>
+
+  </view>
+  <view class="divider"></view>
+</view>
